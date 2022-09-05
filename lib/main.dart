@@ -1,4 +1,5 @@
-import 'package:api_learning/crating_own_model.dart';
+import 'package:api_learning/example_four.dart';
+import 'package:api_learning/third_example.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const CreatingOwnModel(),
+      home: const ExampleFour(),
     );
   }
 }
