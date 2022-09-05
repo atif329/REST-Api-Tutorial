@@ -38,7 +38,7 @@ class _CreatingOwnModelState extends State<CreatingOwnModel> {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: Text('API Tutorial'),
+        title: const Text('API Tutorial'),
       ),
       body: Column(children: [
         Expanded(
@@ -54,8 +54,7 @@ class _CreatingOwnModelState extends State<CreatingOwnModel> {
                               snapshot.data![index].url.toString()),
                         ),
                         subtitle: Text(snapshot.data![index].title.toString()),
-                        title: Text(
-                            'Notes id: ' + snapshot.data![index].id.toString()),
+                        title: Text('Notes id: ${snapshot.data![index].id}'),
                       );
                     });
               }),
